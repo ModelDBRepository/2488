@@ -14,7 +14,7 @@ geometry.
 The reference paper is:
 Z. F. Mainen and T. J. Sejnowski (1996) Influence of dendritic
 structure on firing pattern in model neocortical neurons.
-Nature 382:363-366.
+*Nature* 382:363-366.
 
 See also http://www.cnl.salk.edu/~zach/methods.html and
 http://www.cnl.salk.edu/~zach/
@@ -24,41 +24,38 @@ Michael Hines and available on internet at:
 http://www.neuron.yale.edu/
 
 
-  HOW TO RUN (under NEURON version 4 and higher)
-  =========================================
 
-To compile the demo, NEURON and INTERVIEWS must be installed and
+HOW TO RUN (under NEURON version 4 and higher)
+=========================================
+
+- To compile the demo, NEURON and INTERVIEWS must be installed and
 working on the machine you are using.
 
-When the patdemo1.zip file is unzipped it creates a patdemo directory
+- When the patdemo1.zip file is unzipped it creates a patdemo directory
 which contains the hoc and mod NEURON program files.  Change directory
 to patdemo.
 
 under UNIX:
 ===========
 
-Just type "nrnivmodl" to compile the mechanisms given in the mod files
+- Just type ```nrnivmodl``` to compile the mechanisms given in the mod files
 in the patdemo directory.
 
-Execute the first figure demo program by typing:
-
-nrngui demofig1.hoc
+- Execute the first figure demo program by typing: ``` nrngui demofig1.hoc ```
 
 continue below under back to any platform:
 
 under MS WINDOWS (PC):
 ======================
 
-Press Start button (lower left corner) and then press Programs and
+- Press Start button (lower left corner) and then press Programs and
 then NEURON and then mknrndll DOS box.  Change directory to where the
 zip file was unzipped and enter the directory that came with the zip
-file (patdemo). Type mknrndll and press the Enter key.
+file (patdemo). Type ```mknrndll``` and press the Enter key.
 
-Execute the first figure demo program by typing:
+- Execute the first figure demo program by typing: ``` nrngui ```
 
-nrngui
-
-In the NEURON main menu click on file and open and then double click
+- In the NEURON main menu click on file and open and then double click
 on demofig1.hoc
 
 continue below:
@@ -66,22 +63,18 @@ continue below:
 back to any platform:
 =====================
 
-For each of the cells, click on one of the cell buttons in the
-figure 1 window - for example
+- For each of the cells, click on one of the cell buttons in the
+figure 1 window - for example a. L3 Aspiny
 
-a. L3 Aspiny
+  and then click on the Init & Run button to observe the voltage trace.
 
-and then click on the Init & Run button to observe the voltage trace.
-
-to explore the figure 2 model quit (click on file and then quit in the
+- to explore the figure 2 model quit (click on file and then quit in the
 NEURON main menu) and start up again using the command:
-
-nrngui demofig2.hoc
-
-To explore parameters in these models, on the NEURON main menu click
+``` nrngui demofig2.hoc ```
+- To explore parameters in these models, on the NEURON main menu click
 on Tools, Distributed Mechanisms, Viewers, and Name Values
 
-When the special window comes up double click on one of the sections
+- When the special window comes up double click on one of the sections
 in the left hand column, e.g. soma and then finally you can
 observe/change the parameters of the model.  Note for example that
 changing the morphology of the model, e.g. changing L, will cause the
@@ -90,7 +83,7 @@ window press one of the cell buttons again in the Figure 1 window.  At
 any time you can test how any of your modifications change the
 electrical excitability by pressing Init & Run.
 
-If you wish to change the current injected into the model, on the
+- If you wish to change the current injected into the model, on the
 NEURON main menu click on Tools, Point Processes, Viewers, and IClamp.
 Then on the new IClamp window double click on "soma(0.5)".  The on the
 "IClamp[] at soma(.5)" modify the protocol by for example changing the
@@ -120,3 +113,8 @@ general in case the method is extended to different cells than
 originally studied. See also
 https://github.com/Felix11H/mainen_sejnowski_1996_NEURON_Python for a
 python version of this model Felix developed.
+
+
+Changelog
+=========
+2024-10: Converted readme to markdown
